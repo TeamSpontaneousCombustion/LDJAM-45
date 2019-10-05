@@ -1,0 +1,1283 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"foreach\tForEach"
+			],
+			[
+				"Selec",
+				"SelectedChannel"
+			],
+			[
+				"Mesa",
+				"Message"
+			],
+			[
+				"UpdateCha",
+				"UpdateChat"
+			],
+			[
+				"Sele",
+				"SelectedChannel"
+			],
+			[
+				"Seel",
+				"SelectedChannel"
+			],
+			[
+				"sele",
+				"SelectedGuild"
+			],
+			[
+				"Upd",
+				"UpdateGuilds"
+			],
+			[
+				"Gu",
+				"Guilds"
+			],
+			[
+				"Find",
+				"FindChannel"
+			],
+			[
+				"ch",
+				"Channels"
+			],
+			[
+				"Guilds",
+				"GuildsList"
+			],
+			[
+				"Update",
+				"UpdateInput"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"s",
+				"sticky\tposition"
+			],
+			[
+				"inlin",
+				"inline-block\tdisplay"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"u",
+				"user_check"
+			],
+			[
+				"paddi",
+				"padding-left\tproperty"
+			],
+			[
+				"text-",
+				"text-decoration\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"Inpu",
+				"InputPassword"
+			],
+			[
+				"In",
+				"InputUsername"
+			],
+			[
+				"Input",
+				"InputType"
+			],
+			[
+				"my",
+				"mysql_close"
+			],
+			[
+				"Inv",
+				"InventoryView"
+			],
+			[
+				"c_clien",
+				"c_cliente_r"
+			],
+			[
+				"c_lc",
+				"c_cliente_r"
+			],
+			[
+				"smp",
+				"smpcraftcustom"
+			],
+			[
+				"Verte",
+				"VertexR\tVertex VertexR"
+			],
+			[
+				"ED",
+				"EdgeR"
+			],
+			[
+				"Vertex",
+				"VertexI\tVertex VertexI"
+			],
+			[
+				"Ver",
+				"VertexJ\tVertex VertexJ"
+			],
+			[
+				"Grap",
+				"GraphMatrixPrint\tvoid GraphMatrixPrint(Vertex *)"
+			],
+			[
+				"Nex",
+				"NextEdge"
+			],
+			[
+				"Edge",
+				"EdgeInsert\tvoid EdgeInsert(Vertex *, char, Edge)"
+			],
+			[
+				"new",
+				"newVertex"
+			],
+			[
+				"Gra",
+				"GraphCreate\tVertex GraphCreate()"
+			],
+			[
+				"backgro",
+				"background-image\tproperty"
+			],
+			[
+				"Tem",
+				"TempSpace"
+			],
+			[
+				"print",
+				"PrintDate"
+			],
+			[
+				"Get",
+				"GetXYOfLevel"
+			],
+			[
+				"child",
+				"childNodes"
+			],
+			[
+				"nod",
+				"nodeR2"
+			],
+			[
+				"head",
+				"headOrd"
+			],
+			[
+				"next",
+				"nextOrd"
+			],
+			[
+				"nexT",
+				"nextOrd"
+			],
+			[
+				"he",
+				"headOrd"
+			],
+			[
+				"Organ",
+				"OrganSprites\tSprite[]"
+			],
+			[
+				"curret",
+				"CurrentPatient\tGameObject"
+			],
+			[
+				"Unity",
+				"UnityEngine\tUnityEngine"
+			],
+			[
+				"Operati",
+				"OperationEnded\tbool"
+			],
+			[
+				"Pa",
+				"Patients\tGameObject[]"
+			],
+			[
+				"Dictionry",
+				"Dictionary<TKey, TValue>\tDictionary<TKey, TValue>"
+			],
+			[
+				"Curre",
+				"CurrentPatient\tGameObject"
+			],
+			[
+				"Game",
+				"GameManager\tGameManager"
+			],
+			[
+				"instan",
+				"Instantiate(Object original)\tObject"
+			],
+			[
+				"SpawnPacient",
+				"SpawnPacient()\tSpawnPacient()"
+			],
+			[
+				"Vect",
+				"Vector3\tVector3"
+			],
+			[
+				"Vec",
+				"Vector3\tVector3"
+			],
+			[
+				"Quat",
+				"Quaternion()\tQuaternion()"
+			],
+			[
+				"Instantate",
+				"Instantiate(Object original)\tObject"
+			],
+			[
+				"AudioSour",
+				"AudioSources\tAudioSource[]"
+			],
+			[
+				"Sprites",
+				"Sprites\tSprite[]"
+			],
+			[
+				"Sprite",
+				"SpriteRenderer\tSpriteRenderer"
+			],
+			[
+				"Dic",
+				"Dictionary<TKey, TValue>()\tDictionary<TKey, TValue>()"
+			],
+			[
+				"Dictiorn",
+				"Dictionary<TKey, TValue>\tDictionary<TKey, TValue>"
+			],
+			[
+				"Mat",
+				"Mathf\tMathf"
+			],
+			[
+				"Next",
+				"NextPointTime\tfloat"
+			],
+			[
+				"en",
+				"EndPoint\tGameObject"
+			],
+			[
+				"GetMouseButton",
+				"GetMouseButtonUp(int button)\tbool"
+			],
+			[
+				"Min",
+				"MinPoint\tGameObject"
+			],
+			[
+				"Start",
+				"StartPoint\tGameObject"
+			],
+			[
+				"Poin",
+				"Points\tGameObject[]"
+			],
+			[
+				"pi",
+				"PI\tfloat"
+			],
+			[
+				"GetKey",
+				"GetKey(KeyCode key)\tbool"
+			],
+			[
+				"p",
+				"localPosition\tVector3"
+			],
+			[
+				"getCom",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"Rigid",
+				"Rigidbody2D\tRigidbody2D"
+			],
+			[
+				"Header",
+				"HeaderAttribute(string header)\tHeaderAttribute(string header)"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"r",
+				"RED"
+			],
+			[
+				"DOTA_UNI",
+				"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+			],
+			[
+				"GetAb",
+				"GetAbilityName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 7/Indicadores.txt",
+			"settings":
+			{
+				"buffer_size": 3070,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/TSC/Intro.cs",
+			"settings":
+			{
+				"buffer_size": 395,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Scripts/PlayerMovement.cs",
+			"settings":
+			{
+				"buffer_size": 1435,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine;\n\npublic class ShipComponent : MonoBehaviour\n{\n\tpublic int Health = 10;\n\n\tVector2 deltaPos = Vector2.zero;\n\n\tbool IsBeingDragged = false;\n\n\tPlayerMovement pm;\n\tbool CreateGhosts = true;\n\n\tRigidbody2D rb;\n    // Start is called before the first frame update\n\tvoid Start()\n\t{\n\t\tpm = GameObject.Find(\"Ship\").GetComponent<PlayerMovement>();\n\t\trb = GetComponent<Rigidbody2D>();\n\t}\n\n    // Update is called once per frame\n\tvoid Update()\n\t{\n    \t//Draging Stuff:\n\t\tif(pm.EditMode) {\n\t\t\tif(CreateGhosts) {\n\t\t\t\tCreateAnchors();\n\t\t\t\tCreateGhosts = false;\n\t\t\t}\n\t\t\tif(!IsBeingDragged) {\n\t\t\t\tif(Input.GetMouseButtonDown(0)) {\n\t\t\t\t\tRaycastHit2D hit = Physics2D.Raycast(\n\t\t\t\t\t\tCamera.main.ScreenToWorldPoint(Input.mousePosition),\n\t\t\t\t\t\tVector2.zero,\n\t\t\t\t\t\tMathf.Infinity\n\t\t\t\t\t\t);\n\t\t\t\t\tif(hit.collider != null) {\n\t\t\t\t\t\tif(hit.transform.gameObject == this.gameObject){\n\t\t\t\t\t\t\tIsBeingDragged = true;\n\t\t\t\t\t\t\tdeltaPos = (Vector2) transform.position - (Vector2) hit.point;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\ttransform.position = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition) + (Vector2) deltaPos;\n\t\t\t\tif(Input.GetMouseButtonUp(0)) {\n\t\t\t\t\tIsBeingDragged = false;\n\n\t\t\t\t\tRaycastHit2D hit = Physics2D.Raycast(\n\t\t\t\t\t\tCamera.main.ScreenToWorldPoint(Input.mousePosition),\n\t\t\t\t\t\tVector2.zero,\n\t\t\t\t\t\tMathf.Infinity\n\t\t\t\t\t\t);\n\t\t\t\t\tif(hit.collider != null) {\n\t\t\t\t\t\tif(hit.transform.gameObject == this.gameObject){\n\t\t\t\t\t\t\tbool AnyConnection = false;\n\t\t\t\t\t\t\tforeach (Vector2 Anchor in pm.AnchorPoints) {\n\t\t\t\t\t\t\t\tfloat dist = Vector2.Distance(transform.position, Anchor + (Vector2)pm.transform.position);\n\t\t\t\t\t\t\t\tif(dist < 1) {\n\t\t\t\t\t\t\t\t\ttransform.parent = pm.transform;\n\t\t\t\t\t\t\t\t\ttransform.rotation = pm.transform.rotation;\n\t\t\t\t\t\t\t\t\ttransform.localPosition = Anchor;\n\t\t\t\t\t\t\t\t\tpm.gameObject.SendMessage(\"UpdateShip\");\n\t\t\t\t\t\t\t\t\tAnyConnection = true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif(!AnyConnection) {\n\t\t\t\t\t\t\t\ttransform.parent = null;\n\t\t\t\t\t\t\t\tpm.gameObject.SendMessage(\"UpdateShip\");\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t} else {\n\t\t\tCreateGhosts = true;\n\t\t}\n\t}\n\n\tvoid CreateAnchors() {\n\t\t\n\t}\n}\n",
+			"file": "Assets/Scripts/ShipComponent.cs",
+			"file_size": 2289,
+			"file_write_time": 132147092515008752,
+			"settings":
+			{
+				"buffer_size": 2149,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Engine.cs",
+			"settings":
+			{
+				"buffer_size": 169,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Debug"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Debug"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Makefile/Make.sublime-build",
+					""
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/Makefile/Make.sublime-build",
+					"Debug"
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Makefile/Make.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Kulture/ASP.NET.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"the",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"them",
+				"UI: Select Color Scheme"
+			],
+			[
+				"pasca",
+				"Set Syntax: Pascal"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"lisp",
+				"Set Syntax: Lisp"
+			],
+			[
+				"ython",
+				"Set Syntax: Python"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"javatar",
+				"Javatar: Builds..."
+			],
+			[
+				"javatar se",
+				"Preferences: Javatar Settings – Default"
+			],
+			[
+				"java",
+				"Javatar: Builds..."
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"set c",
+				"Set Syntax: C"
+			],
+			[
+				"syn c",
+				"Set Syntax: C"
+			],
+			[
+				"c",
+				"Changelog"
+			],
+			[
+				"build",
+				"Build With: Python"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"xm",
+				"Set Syntax: XML"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"trab",
+				"Package Control: Enable Package"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"ttab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"c#",
+				"Set Syntax: Unity C#"
+			],
+			[
+				"syntax c#",
+				"Set Syntax: Unity C#"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"u",
+				"UI: Select Color Scheme"
+			],
+			[
+				"node",
+				"Nodejs::User File Settings"
+			],
+			[
+				"icon",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"mater",
+				"Activate Materialize Theme"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Install Package Control"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"package control lis",
+				"Package Control: List Packages"
+			],
+			[
+				"activ",
+				"Activate Materialize Theme"
+			],
+			[
+				"list al",
+				"Package Control: List Packages"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"materi",
+				"Activate Materialize Theme"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"kv",
+				"Set Syntax: Dota KV"
+			],
+			[
+				"activa",
+				"Material Theme: Activate theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts"
+	],
+	"file_history":
+	[
+		"/C/Users/ignac/Documents/Unity/LDJAM 42/Assets/Scripts/Dragable.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/LDJAM 45.sublime-project",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/s",
+		"/C/Users/ignac/Documents/Unity/LDJAM 42/Assets/TSC/Util.cs",
+		"/C/Ignacio/Programming/QQ/DC-QQ bot/LilyWhiteBot-master/config.js",
+		"/C/Users/ignac/Downloads/TODO Metodos y Sistemas.txt",
+		"/C/Ignacio/Programming/QQ/DC-QQ bot/LilyWhiteBot-master/lib/handlers/DiscordMessageHandler.js",
+		"/C/Ignacio/Programming/QQ/DC-QQ bot/LilyWhiteBot-master/lib/QQBot.js",
+		"/C/Ignacio/Programming/QQ/DC-QQ bot/LilyWhiteBot-master/main.js",
+		"/C/Ignacio/Programming/QQ/DC-QQ bot/LilyWhiteBot-master/lib/handlers/MessageHandler.js",
+		"/C/Ignacio/Programming/QQ/DC-QQ bot/LilyWhiteBot-master/lib/handlers/QQMessageHandler.js",
+		"/C/Ignacio/Programming/DiscordBot/main.js",
+		"/C/Ignacio/Programming/QQ/DC-QQ bot/LilyWhiteBot-master/badwords.example.js",
+		"/C/Ignacio/Programming/QQ/DC-QQ bot/LilyWhiteBot-master/main",
+		"/C/Users/ignac/Downloads/config.js",
+		"/C/Ignacio/2019-2/LP1/LeeNombresYOrdena/Funciones.cpp",
+		"/C/Ignacio/2019-2/LP1/ArchivosBinarios/main.cpp",
+		"/C/Ignacio/2019-2/LP1/AsignacionPorIncrementos/Funciones.cpp",
+		"/C/Ignacio/2019-2/LP1/AsignacionPorIncrementos/Funciones.h",
+		"/C/Ignacio/2019-2/LP1/SobrecargaSinObjetos/Sobrecargas.cpp",
+		"/C/Ignacio/2019-2/LP1/SobrecargaSinObjetos/Estructuras.h",
+		"/C/Ignacio/2019-2/LP1/SobrecargaSinObjetos/main.cpp",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 4/Flujo de Informacion.txt",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 3/Levantamiento o Captura de Datos.txt",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 2/Ciclo de Vida de un Proceso.png",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 2/Tipos.txt",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 2/Roles.txt",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 2/Proceso.txt",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 2/Organizaciones.txt",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 2/Ciclo de Vida.txt",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 2/Atributos.txt",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 1/Procesos.txt",
+		"/C/Users/ignac/Downloads/Lab1_Sistemas.txt",
+		"/C/Users/ignac/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/ignac/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Ignacio/Ludo_lista_enlazada-master/practca_sfml/Casilla.h",
+		"/C/Users/ignac/AppData/Local/Temp/7zEC09CD60F/main.cpp",
+		"/C/Ignacio/2019-2/Other/DiscTerm/discorddata.py",
+		"/C/Ignacio/2019-2/Other/DiscTerm/ui.py",
+		"/C/Ignacio/2019-2/Other/DiscTerm/main.py",
+		"/C/Ignacio/2019-2/Other/DiscTerm/general.txt",
+		"/C/Ignacio/2019-2/Other/DiscTerm/mjes-faces.txt",
+		"/C/Ignacio/2019-2/Other/DiscTerm/snailfies.txt",
+		"/C/Ignacio/2019-2/Other/DiscTerm/bot-testing-grounds.txt",
+		"/C/Ignacio/2019-2/LP1/P1-2019-1/makefile",
+		"/C/Users/ignac/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/RoamingState/profiles.json",
+		"/C/Ignacio/Programming/DiscTerm/ui.py",
+		"/C/Ignacio/Programming/DiscTerm/main.py",
+		"/C/Users/ignac/AppData/Roaming/Sublime Text 3/Packages/Python/Python.sublime-build",
+		"/C/wamp64/www/facebook/createpost.php",
+		"/C/wamp64/www/facebook/home.php",
+		"/C/wamp64/www/facebook/index.php",
+		"/C/wamp64/www/facebook/session.php",
+		"/C/wamp64/www/facebook/logout.php",
+		"/C/wamp64/www/facebook/assets/css/style.css",
+		"/C/wamp64/www/facebook/signup.php",
+		"/C/wamp64/www/facebook/config.php",
+		"/C/wamp64/apps/phpsysinfo3.3.0/.htaccess",
+		"/C/wamp64/bin/apache/apache2.4.39/conf/httpd.conf",
+		"/C/wamp64/bin/apache/apache2.4.39/manual/howto/htaccess.html.en",
+		"/C/wamp64/bin/apache/apache2.4.39/manual/howto/htaccess.html",
+		"/C/wamp64/www/facebook/login.php",
+		"/C/wamp64/www/index.php",
+		"/C/Users/ignac/Downloads/relationships.sql",
+		"/C/Users/ignac/Downloads/Gestion EX02.txt",
+		"/C/Users/ignac/Downloads/Gestion P3.txt",
+		"/C/Users/ignac/Downloads/New folder/Resumen Gestion.txt",
+		"/C/Users/ignac/Downloads/Lab05_20171160(1).sql",
+		"/C/Users/ignac/Downloads/Pensamiento.txt",
+		"/C/Users/ignac/Downloads/Red Bayesiana.txt",
+		"/C/Ignacio/Programming/Terminal-Tetris/Tetris.c",
+		"/C/Ignacio/Programming/Terminal-Tetris/makefile",
+		"/C/Users/ignac/Downloads/Lab5-Solucionario.sql",
+		"/C/Users/ignac/Downloads/20171160-Examen1.sql",
+		"/C/Users/ignac/Downloads/Lab05_20171160.sql",
+		"/C/Users/ignac/Downloads/procedimientos1.sql",
+		"/C/Users/ignac/Downloads/SQL.sql",
+		"/C/Users/ignac/Downloads/LAB03_20171160.sql",
+		"/C/Users/ignac/Downloads/Lab5-Solucionario (1).sql",
+		"/C/Ignacio/Programming/TecnicasDeProgramacion/Template/makefile",
+		"/C/Users/ignac/IdeaProjects/SMPCraftCustom/makefile",
+		"/C/Users/ignac/IdeaProjects/SMPCraftCustom/SMPCraftCustom.iml",
+		"/C/Users/ignac/IdeaProjects/SMPCraftCustom/Main.java",
+		"/C/Users/ignac/IdeaProjects/SMPCraftCustom/CommandDiscord.java",
+		"/C/Users/ignac/IdeaProjects/SMPCraftCustom/Javatar.sublime-settings",
+		"/C/Ignacio/Programming/Grafos/graphs.h",
+		"/C/Ignacio/Programming/Grafos/graphs.c",
+		"/C/Ignacio/Programming/Grafos/list.c",
+		"/C/Ignacio/Programming/Grafos/Grafo/amplitud.c",
+		"/C/Ignacio/Programming/Grafos/Grafo/main.c",
+		"/C/Ignacio/Programming/Grafos/Grafo/cola.c",
+		"/C/Ignacio/Programming/Grafos/list.h",
+		"/C/Ignacio/Programming/Grafos/queue.h",
+		"/C/Ignacio/Programming/Grafos/queue.c",
+		"/C/Ignacio/Programming/Grafos/main.c",
+		"/C/Ignacio/Programming/Grafos/makefile",
+		"/C/Ignacio/Programming/Grafos/Grafo/grafo.c",
+		"/C/Users/ignac/AppData/Roaming/Sublime Text 3/Packages/Makefile/Make.sublime-build",
+		"/C/Ignacio/Programming/Grafos/grafos.h",
+		"/C/Ignacio/Programming/Grafos/Grafo/grafo.h",
+		"/C/Users/ignac/AppData/Local/Temp/7zE08A709FD/grafo.h",
+		"/C/Users/ignac/Downloads/La concepcion de paz positiva.txt",
+		"/C/Users/ignac/Downloads/config.sk",
+		"/C/Users/ignac/Downloads/Essentials_1.sk",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_includes/navbar.html",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/css/style.css",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_includes/MusicList.html",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Angler.markdown",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Downstage Draft.markdown",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Spellbound.markdown",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Terraform.markdown",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Love Love! Space Attack.markdown",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Daycare Dilemma.markdown",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Vital Operations.markdown",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/music.md",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/index.md",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/assets/page.css",
+		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/assets/Random-StoryKeeper.png",
+		"/C/Users/ignac/Downloads/Pilas (1).c",
+		"/C/Ignacio/Pregunta1.c",
+		"/C/Users/ignac/source/repos/ClassLibrary1/ClassLibrary1.sln",
+		"/C/Users/ignac/AppData/Roaming/Sublime Text 3/Packages/C++/C Single File.sublime-build",
+		"/C/Users/ignac/Downloads/Pilas.c",
+		"/C/Users/ignac/Documents/Pregunta1.c",
+		"/C/Users/ignac/AppData/Local/Temp/7zE87665275/Pregunta1.c",
+		"/C/Ignacio/Harmony/TestLevel.xml",
+		"/C/Ignacio/Harmony/MapImporter_LoadLevel.cs",
+		"/C/Ignacio/Harmony/BombChickenLevels.xml"
+	],
+	"find":
+	{
+		"height": 72.0
+	},
+	"find_in_files":
+	{
+		"height": 164.0,
+		"where_history":
+		[
+			"C:\\Ignacio\\Programming\\QQ\\DC-QQ bot\\LilyWhiteBot-master",
+			"C:\\Ignacio\\Programming\\QQ\\DC-QQ bot\\LilyWhiteBot-master\\plugins",
+			"C:\\Ignacio\\Programming\\QQ\\DC-QQ bot\\LilyWhiteBot-master"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"deltapos",
+			"isBeingDragged",
+			"Check",
+			"Promise Error:",
+			"Promise error:",
+			"\"Promise error: \"",
+			"Promise",
+			"catc",
+			"qq",
+			"socket.on(",
+			"parse",
+			"message",
+			"on.",
+			"on",
+			"send",
+			"command",
+			"processMessage",
+			"discord",
+			"send",
+			"discord"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 7/Indicadores.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3070,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/TSC/Intro.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 395,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								201,
+								201
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/PlayerMovement.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1435,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1395,
+								1395
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 483.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Scripts/ShipComponent.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2143,
+								2143
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1385.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Scripts/Engine.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 72.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 208.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 156.0
+	},
+	"pinned_build_system": "",
+	"project": "LDJAM 45.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
