@@ -15,8 +15,8 @@ public class Enemy_RandomDirection : MonoBehaviour
 		Target = (Vector2)Player.transform.position + new Vector2(Random.Range(-5f,5f), Random.Range(-5f,5f));
 	}
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
 	{
 		if(Vector2.Distance(transform.position, Player.transform.position) > 15) {
 			return;
@@ -27,5 +27,8 @@ public class Enemy_RandomDirection : MonoBehaviour
 		Vector2 Dir = (Target - (Vector2)transform.position).normalized;
 		transform.Translate(MoveSpeed * Time.deltaTime * Dir);
 
-    }
+		float AngleTo = Mathf.Atan2(Dir.y, Dir.x) * Mathf.Rad2Deg - 90;
+		transform.localEulerAngles = new Vector3(0,0,AngleTo);
+
+	}
 }

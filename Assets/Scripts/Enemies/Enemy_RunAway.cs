@@ -13,8 +13,8 @@ public class Enemy_RunAway : MonoBehaviour
 		Player = GameObject.Find("Ship");
 	}
 
-    // Update is called once per frame
-    void Update()
+	// Update is called once per frame
+	void Update()
 	{
 		if(Vector2.Distance(transform.position, Player.transform.position) > 15) {
 			return;
@@ -22,5 +22,8 @@ public class Enemy_RunAway : MonoBehaviour
 
 		Vector2 dir = -(Player.transform.position - transform.position).normalized;
 		transform.Translate(MoveSpeed * Time.deltaTime * dir);
-    }
+
+		float AngleTo = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
+		transform.localEulerAngles = new Vector3(0,0,AngleTo);
+	}
 }

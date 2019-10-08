@@ -23,6 +23,9 @@ public class Enemy_FollowPlayer : MonoBehaviour
 		if(Vector2.Distance(transform.position, Player.transform.position) > 1) {
 			Vector2 dir = (Player.transform.position - transform.position).normalized;
 			transform.Translate(MoveSpeed * Time.deltaTime * dir);
+
+			float AngleTo = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
+			transform.localEulerAngles = new Vector3(0,0,AngleTo);
 		}
 		
 	}
