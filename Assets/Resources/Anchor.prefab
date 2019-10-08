@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -5535504090386412768}
   - component: {fileID: -1651196943914448201}
   - component: {fileID: 5112004250409939267}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Anchor
   m_TagString: Ghosts
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f79239718b37e7b469c11abca9bd248f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

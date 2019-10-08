@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShipComponent : MonoBehaviour
 {
-	public int Health = 10;
+	public int Health = 3;
 
 	Vector2 deltaPos = Vector2.zero;
 
@@ -35,7 +35,8 @@ public class ShipComponent : MonoBehaviour
 					RaycastHit2D hit = Physics2D.Raycast(
 						Camera.main.ScreenToWorldPoint(Input.mousePosition),
 						Vector2.zero,
-						Mathf.Infinity
+						Mathf.Infinity,
+						~(1 << 12)
 						);
 					if(hit.collider != null) {
 						if(hit.transform.gameObject == this.gameObject){
@@ -45,23 +46,31 @@ public class ShipComponent : MonoBehaviour
 									continue;
 								}
 								float dist = Vector2.Distance(transform.position, Anchor.transform.position);
-								if(dist < 0.5f) {
+								//Debug.Log(dist);
+								if(dist < 0.7f) {
+									//Attach the part to the main ship
 									transform.parent = pm.transform;
 									transform.rotation = pm.transform.rotation;
 									transform.position = Anchor.transform.position;
-									pm.gameObject.SendMessage("UpdateShip");
+									gameObject.layer = 11;
 									AnyConnection = true;
+									pm.gameObject.SendMessage("UpdateShip");									
 								}
 							}
 							if(!AnyConnection) {
+								//Detach the part from the main ship
 								transform.parent = null;
+								gameObject.layer = 0;
 								pm.gameObject.SendMessage("UpdateShip");
 							}
 						}
 					}
 				}
 			}
-		} 
+		}
+		if(Health <= 0) {
+			KillPart();
+		}
 	}
 	void CheckDrag(){
 		if(Input.GetMouseButtonDown(0)) {
@@ -72,11 +81,24 @@ public class ShipComponent : MonoBehaviour
 				);
 			if(hit.collider != null) {
 				if(hit.transform.gameObject == this.gameObject){
-					gameObject.SendMessage("DestroyGhosts");
+					gameObject.SendMessage("DestroyGhosts", null, SendMessageOptions.DontRequireReceiver);
 					IsBeingDragged = true;
 					deltaPos = (Vector2) transform.position - (Vector2) hit.point;
 				}
 			}
+		}
+	}
+
+	void KillPart() {
+		Destroy(gameObject);
+		pm.gameObject.SendMessage("UpdateShip");
+	}
+
+	void OnCollisionEnter2D(Collision2D col) {
+		if(col.gameObject.layer == 10) {
+			Health--;
+			Destroy(col.gameObject);
+			Instantiate(Resources.Load("Sounds/Hurt"));
 		}
 	}
 }

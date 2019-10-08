@@ -1,0 +1,27 @@
+{
+	"Enemy_ShootAtPlayer": {
+		"Delay": 3,
+		"BulletSpeed": 1
+	},
+	"Enemy_ShootCircle": {
+		"Delay": 3,
+		"BulletSpeed": 2
+	},
+	"Enemy_ShootPlus": {
+		"Delay": 3,
+		"BulletSpeed": 1
+	},
+	"Enemy_RunAway": {
+		"MoveSpeed": 1
+	},
+	"Enemy_FollowPlayer": {
+		"MoveSpeed": 2
+	},
+	"Enemy_RandomDirection": {
+		"MoveSpeed": 2
+	},
+	"Player": {
+		"BulletSpeed": 9,
+		"EnginePower": 7
+	}
+}

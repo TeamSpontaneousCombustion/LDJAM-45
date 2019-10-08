@@ -5,92 +5,32 @@ using UnityEngine;
 public class Ghosts : MonoBehaviour
 {	
 	PlayerMovement pm;
-	bool CreateGhosts = true;
     // Start is called before the first frame update
 	void Start()
 	{
 		pm = GameObject.Find("Ship").GetComponent<PlayerMovement>();
 	}
 
-    // Update is called once per frame
-	void Update()
-	{
-		if(pm.EditMode) {
-			if(CreateGhosts && (transform.parent != null || transform == pm.gameObject.transform)) {
-				CreateAnchors();
-				CreateGhosts = false;
-			}
-		} else {
-			if(!CreateGhosts) {
-				DestroyGhosts();
-			}
-			CreateGhosts = true;
-		}
-	}
-
 	void CreateAnchors() {
-		//Please Forgive me
-		RaycastHit2D hit = Physics2D.BoxCast(
-			transform.position + transform.up,
+		RaycastHit2D hit;
+		Vector2[] dirs = new Vector2[] {transform.up, -transform.up, -transform.right, transform.right};
+		for(int i = 0; i < dirs.Length; i++) {
+			hit = Physics2D.BoxCast(
+			(Vector2)transform.position + dirs[i],
 			new Vector2(0.1f, 0.1f),
 			0f,
-			transform.up,
-			0.1f
+			dirs[i],
+			0.1f,
+			1 << 11
 			);
-		if(hit.collider == null) {
-			Instantiate(
+			if(hit.collider == null) {
+				Instantiate(
 				Resources.Load("Anchor"),
-				transform.position + transform.up,
+				(Vector2)transform.position + dirs[i],
 				transform.rotation,
 				transform
 				);
-		}
-
-		hit = Physics2D.BoxCast(
-			transform.position - transform.right,
-			new Vector2(0.1f, 0.1f),
-			0f,
-			-transform.right,
-			0.1f
-			);
-		if(hit.collider == null) {
-			Instantiate(
-				Resources.Load("Anchor"),
-				transform.position - transform.right,
-				transform.rotation,
-				transform
-				);
-		}
-
-		hit = Physics2D.BoxCast(
-			transform.position - transform.up,
-			new Vector2(0.1f, 0.1f),
-			0f,
-			- transform.up,
-			0.1f
-			);
-		if(hit.collider == null) {
-			Instantiate(
-				Resources.Load("Anchor"),
-				transform.position - transform.up,
-				transform.rotation,
-				transform
-				);
-		}
-		hit = Physics2D.BoxCast(
-			transform.position + transform.right,
-			new Vector2(0.1f, 0.1f),
-			0f,
-			transform.right,
-			0.1f
-			);
-		if(hit.collider == null) {
-			Instantiate(
-				Resources.Load("Anchor"),
-				transform.position + transform.right,
-				transform.rotation,
-				transform
-				);
+			}
 		}
 	}
 

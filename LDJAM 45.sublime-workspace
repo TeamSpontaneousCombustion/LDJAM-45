@@ -4,6 +4,70 @@
 		"selected_items":
 		[
 			[
+				"Engine",
+				"EnginePower"
+			],
+			[
+				"Tr",
+				"Trophies"
+			],
+			[
+				"tr",
+				"trophy"
+			],
+			[
+				"Fire",
+				"FireRate"
+			],
+			[
+				"Engin",
+				"EnginePower"
+			],
+			[
+				"Bullet",
+				"BulletSpeed"
+			],
+			[
+				"Bu",
+				"BulletSpeed"
+			],
+			[
+				"Vec",
+				"Vector2"
+			],
+			[
+				"Pl",
+				"Player.transform.position"
+			],
+			[
+				"transf",
+				"transform.position"
+			],
+			[
+				"Up",
+				"UpdateShip"
+			],
+			[
+				"trans",
+				"transform.rotation"
+			],
+			[
+				"transfo",
+				"transform.right"
+			],
+			[
+				"Creat",
+				"CreateGhosts"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"Cre",
+				"CreateGhosts"
+			],
+			[
 				"for",
 				"foreach\tForEach"
 			],
@@ -244,10 +308,6 @@
 				"Vector3\tVector3"
 			],
 			[
-				"Vec",
-				"Vector3\tVector3"
-			],
-			[
 				"Quat",
 				"Quaternion()\tQuaternion()"
 			],
@@ -348,40 +408,19 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 7/Indicadores.txt",
+			"file": "Assets/Scripts/SetArt.cs",
 			"settings":
 			{
-				"buffer_size": 3070,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/TSC/Intro.cs",
-			"settings":
-			{
-				"buffer_size": 395,
+				"buffer_size": 2200,
 				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "Assets/Scripts/PlayerMovement.cs",
 			"settings":
 			{
-				"buffer_size": 1435,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine;\n\npublic class ShipComponent : MonoBehaviour\n{\n\tpublic int Health = 10;\n\n\tVector2 deltaPos = Vector2.zero;\n\n\tbool IsBeingDragged = false;\n\n\tPlayerMovement pm;\n\tbool CreateGhosts = true;\n\n\tRigidbody2D rb;\n    // Start is called before the first frame update\n\tvoid Start()\n\t{\n\t\tpm = GameObject.Find(\"Ship\").GetComponent<PlayerMovement>();\n\t\trb = GetComponent<Rigidbody2D>();\n\t}\n\n    // Update is called once per frame\n\tvoid Update()\n\t{\n    \t//Draging Stuff:\n\t\tif(pm.EditMode) {\n\t\t\tif(CreateGhosts) {\n\t\t\t\tCreateAnchors();\n\t\t\t\tCreateGhosts = false;\n\t\t\t}\n\t\t\tif(!IsBeingDragged) {\n\t\t\t\tif(Input.GetMouseButtonDown(0)) {\n\t\t\t\t\tRaycastHit2D hit = Physics2D.Raycast(\n\t\t\t\t\t\tCamera.main.ScreenToWorldPoint(Input.mousePosition),\n\t\t\t\t\t\tVector2.zero,\n\t\t\t\t\t\tMathf.Infinity\n\t\t\t\t\t\t);\n\t\t\t\t\tif(hit.collider != null) {\n\t\t\t\t\t\tif(hit.transform.gameObject == this.gameObject){\n\t\t\t\t\t\t\tIsBeingDragged = true;\n\t\t\t\t\t\t\tdeltaPos = (Vector2) transform.position - (Vector2) hit.point;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\ttransform.position = (Vector2) Camera.main.ScreenToWorldPoint(Input.mousePosition) + (Vector2) deltaPos;\n\t\t\t\tif(Input.GetMouseButtonUp(0)) {\n\t\t\t\t\tIsBeingDragged = false;\n\n\t\t\t\t\tRaycastHit2D hit = Physics2D.Raycast(\n\t\t\t\t\t\tCamera.main.ScreenToWorldPoint(Input.mousePosition),\n\t\t\t\t\t\tVector2.zero,\n\t\t\t\t\t\tMathf.Infinity\n\t\t\t\t\t\t);\n\t\t\t\t\tif(hit.collider != null) {\n\t\t\t\t\t\tif(hit.transform.gameObject == this.gameObject){\n\t\t\t\t\t\t\tbool AnyConnection = false;\n\t\t\t\t\t\t\tforeach (Vector2 Anchor in pm.AnchorPoints) {\n\t\t\t\t\t\t\t\tfloat dist = Vector2.Distance(transform.position, Anchor + (Vector2)pm.transform.position);\n\t\t\t\t\t\t\t\tif(dist < 1) {\n\t\t\t\t\t\t\t\t\ttransform.parent = pm.transform;\n\t\t\t\t\t\t\t\t\ttransform.rotation = pm.transform.rotation;\n\t\t\t\t\t\t\t\t\ttransform.localPosition = Anchor;\n\t\t\t\t\t\t\t\t\tpm.gameObject.SendMessage(\"UpdateShip\");\n\t\t\t\t\t\t\t\t\tAnyConnection = true;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\tif(!AnyConnection) {\n\t\t\t\t\t\t\t\ttransform.parent = null;\n\t\t\t\t\t\t\t\tpm.gameObject.SendMessage(\"UpdateShip\");\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\n\t\t\t\t}\n\t\t\t}\n\n\n\t\t} else {\n\t\t\tCreateGhosts = true;\n\t\t}\n\t}\n\n\tvoid CreateAnchors() {\n\t\t\n\t}\n}\n",
-			"file": "Assets/Scripts/ShipComponent.cs",
-			"file_size": 2289,
-			"file_write_time": 132147092515008752,
-			"settings":
-			{
-				"buffer_size": 2149,
+				"buffer_size": 3593,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -390,7 +429,79 @@
 			"file": "Assets/Scripts/Engine.cs",
 			"settings":
 			{
-				"buffer_size": 169,
+				"buffer_size": 265,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/ShipComponent.cs",
+			"settings":
+			{
+				"buffer_size": 2650,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Music.cs",
+			"settings":
+			{
+				"buffer_size": 1651,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Gun.cs",
+			"settings":
+			{
+				"buffer_size": 682,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Data/LDJAM45.tsc",
+			"settings":
+			{
+				"buffer_size": 377,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/QuestPointer.cs",
+			"settings":
+			{
+				"buffer_size": 1939,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Enemy.cs",
+			"settings":
+			{
+				"buffer_size": 1180,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Enemies/Enemy_RandomDirection.cs",
+			"settings":
+			{
+				"buffer_size": 945,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/Scripts/Boss/Boss.cs",
+			"settings":
+			{
+				"buffer_size": 855,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -588,12 +699,44 @@
 		"selected_items":
 		[
 			[
-				"install",
-				"Package Control: Install Package"
+				"json",
+				"Set Syntax: JSON"
 			],
 			[
 				"reinde",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"resour",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
 			],
 			[
 				"instal",
@@ -608,20 +751,12 @@
 				"Package Control: Install Package"
 			],
 			[
-				"tab",
-				"Indentation: Convert to Tabs"
-			],
-			[
 				"remove pac",
 				"Package Control: Remove Package"
 			],
 			[
 				"package insta",
 				"Package Control: Install Package"
-			],
-			[
-				"reind",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"theme",
@@ -844,10 +979,47 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts"
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Boss",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Enemies"
 	],
 	"file_history":
 	[
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Data/LDJAM45.tsc",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Gun.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Boss/BossAI.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Trophy.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/PowerCell.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Enemies/Enemy_ShootAtPlayer.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Enemies/Enemy_ShootCircle.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Enemies/Enemy_ShootPlus.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Ghosts.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/QuestPointer.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/ShipComponent.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/PlayerMovement.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Enemies/Enemy_RunAway.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Enemies/Enemy_RandomDirection.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Enemies/Enemy_FollowPlayer.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 41/Assets/Util.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Util.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 41/Assets/Wave1.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/UIButtons.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Enemy.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/TSC/Intro.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Anchor.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/SetArt.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Music.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/FollowPlayer.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/EnemyAI1.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/45/Assets/Scripts/QuestPointer.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/45/Assets/Scripts/EnemyAI1.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/45/Assets/Scripts/SetArt.cs",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/45/Assets/Scripts/PlayerMovement.cs",
+		"/C/Users/ignac/AppData/Roaming/Sublime Text 3/Packages/C# Snippets/Code/ForEach.sublime-snippet",
+		"/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 7/Indicadores.txt",
+		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/Engine.cs",
 		"/C/Users/ignac/Documents/Unity/LDJAM 42/Assets/Scripts/Dragable.cs",
 		"/C/Users/ignac/Documents/Unity/LDJAM 45/LDJAM 45.sublime-project",
 		"/C/Users/ignac/Documents/Unity/LDJAM 45/Assets/Scripts/s",
@@ -940,42 +1112,7 @@
 		"/C/Ignacio/Programming/Grafos/Grafo/main.c",
 		"/C/Ignacio/Programming/Grafos/Grafo/cola.c",
 		"/C/Ignacio/Programming/Grafos/list.h",
-		"/C/Ignacio/Programming/Grafos/queue.h",
-		"/C/Ignacio/Programming/Grafos/queue.c",
-		"/C/Ignacio/Programming/Grafos/main.c",
-		"/C/Ignacio/Programming/Grafos/makefile",
-		"/C/Ignacio/Programming/Grafos/Grafo/grafo.c",
-		"/C/Users/ignac/AppData/Roaming/Sublime Text 3/Packages/Makefile/Make.sublime-build",
-		"/C/Ignacio/Programming/Grafos/grafos.h",
-		"/C/Ignacio/Programming/Grafos/Grafo/grafo.h",
-		"/C/Users/ignac/AppData/Local/Temp/7zE08A709FD/grafo.h",
-		"/C/Users/ignac/Downloads/La concepcion de paz positiva.txt",
-		"/C/Users/ignac/Downloads/config.sk",
-		"/C/Users/ignac/Downloads/Essentials_1.sk",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_includes/navbar.html",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/css/style.css",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_includes/MusicList.html",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Angler.markdown",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Downstage Draft.markdown",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Spellbound.markdown",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Terraform.markdown",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Love Love! Space Attack.markdown",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Daycare Dilemma.markdown",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/_games/Vital Operations.markdown",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/music.md",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/index.md",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/assets/page.css",
-		"/C/Ignacio/Programming/TeamSpontaneousCombustion.github.io/assets/Random-StoryKeeper.png",
-		"/C/Users/ignac/Downloads/Pilas (1).c",
-		"/C/Ignacio/Pregunta1.c",
-		"/C/Users/ignac/source/repos/ClassLibrary1/ClassLibrary1.sln",
-		"/C/Users/ignac/AppData/Roaming/Sublime Text 3/Packages/C++/C Single File.sublime-build",
-		"/C/Users/ignac/Downloads/Pilas.c",
-		"/C/Users/ignac/Documents/Pregunta1.c",
-		"/C/Users/ignac/AppData/Local/Temp/7zE87665275/Pregunta1.c",
-		"/C/Ignacio/Harmony/TestLevel.xml",
-		"/C/Ignacio/Harmony/MapImporter_LoadLevel.cs",
-		"/C/Ignacio/Harmony/BombChickenLevels.xml"
+		"/C/Ignacio/Programming/Grafos/queue.h"
 	],
 	"find":
 	{
@@ -986,6 +1123,7 @@
 		"height": 164.0,
 		"where_history":
 		[
+			"C:\\Users\\ignac\\Documents\\Unity\\LDJAM 45\\Assets\\Scripts",
 			"C:\\Ignacio\\Programming\\QQ\\DC-QQ bot\\LilyWhiteBot-master",
 			"C:\\Ignacio\\Programming\\QQ\\DC-QQ bot\\LilyWhiteBot-master\\plugins",
 			"C:\\Ignacio\\Programming\\QQ\\DC-QQ bot\\LilyWhiteBot-master"
@@ -996,6 +1134,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Tag",
+			"1000",
+			"space",
+			"update",
+			"<<",
+			"updateship",
+			"changemusic",
+			"deb",
+			"update",
+			"Directions.",
+			"OnCol",
+			"Seri",
+			"space",
+			"anchor",
 			"deltapos",
 			"isBeingDragged",
 			"Check",
@@ -1023,6 +1175,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"(int)Directions."
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1033,54 +1186,296 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Ignacio/2019-2/Metodos y Procedimientos/Clase 7/Indicadores.txt",
+					"file": "Assets/Scripts/SetArt.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3070,
+						"buffer_size": 2200,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								236,
-								236
+								369,
+								485
 							]
 						],
 						"settings":
 						{
 							"rainbowth.lispy": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 138.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Scripts/PlayerMovement.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2010,
+								2010
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1656.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Scripts/Engine.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								164
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/Scripts/ShipComponent.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2009,
+								2010
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 717.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Scripts/Music.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								499,
+								499
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Scripts/Gun.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								275
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Data/LDJAM45.tsc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "Assets/TSC/Intro.cs",
+					"buffer": 7,
+					"file": "Assets/Scripts/QuestPointer.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 395,
+						"buffer_size": 1939,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								201,
-								201
+								1150,
+								1156
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 552.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Assets/Scripts/Enemy.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								1180
+							]
+						],
+						"settings":
+						{
+							"rainbowth.lispy": false,
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 483.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Assets/Scripts/Enemies/Enemy_RandomDirection.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
 							]
 						],
 						"settings":
@@ -1093,82 +1488,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Assets/Scripts/PlayerMovement.cs",
+					"buffer": 10,
+					"file": "Assets/Scripts/Boss/Boss.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1435,
+						"buffer_size": 855,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1395,
-								1395
-							]
-						],
-						"settings":
-						{
-							"rainbowth.lispy": false,
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 483.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Assets/Scripts/ShipComponent.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2149,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2143,
-								2143
-							]
-						],
-						"settings":
-						{
-							"rainbowth.lispy": false,
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1385.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Assets/Scripts/Engine.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 169,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								25,
-								25
+								718,
+								718
 							]
 						],
 						"settings":
@@ -1180,7 +1517,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1237,7 +1574,7 @@
 	"project": "LDJAM 45.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 118.0
 	},
 	"save_all_on_build": true,
 	"select_file":
