@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
 		if(Input.GetKeyUp("q")) {
 			EditMode = !EditMode;
 			if(EditMode) {
+				rb.velocity = Vector2.zero
 				gameObject.SendMessage("CreateAnchors");
 			} else {
 				gameObject.SendMessage("DestroyGhosts");
