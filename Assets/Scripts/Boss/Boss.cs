@@ -22,6 +22,7 @@ public class Boss : MonoBehaviour
 		if(Health <= 0) {
 			//Explote and throw some loot :D
 			Instantiate(Resources.Load(Drops[Random.Range(0, Drops.Length)]), transform.position, Quaternion.identity);
+			Instantiate(Resources.Load("Sounds/Ded"));
 			Destroy(gameObject);
 			GameObject Cam = GameObject.Find("Main Camera");
 			Cam.SendMessage("ChangeTheme", "Game");
@@ -30,7 +31,8 @@ public class Boss : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D col) {
 		if(col.gameObject.layer == 8) {
-			Health--;
+			Health--;			
+			Instantiate(Resources.Load("Sounds/EnemyHurt"));
 			Destroy(col.gameObject);
 		}
 	}
