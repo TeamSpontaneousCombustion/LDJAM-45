@@ -17,7 +17,6 @@ public class Gun : MonoBehaviour
         GameObject Bullet = (GameObject)Instantiate(
             Resources.Load("FriendlyBullet")
             );
-        Destroy(Bullet, 10f);
         Bullet.transform.position = transform.position;
         Bullet.GetComponent<Rigidbody2D>().velocity = transform.up * speed;
     }
