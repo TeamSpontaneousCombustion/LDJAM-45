@@ -19,7 +19,7 @@ public class Enemy_ShootCircle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector2.Distance(Player.transform.position, transform.position) > 15.0f) {
+        if(Vector2.Distance(Player.transform.position, transform.position) > 20.0f) {
             Cooldown = Time.time + Delay;
             return;
         }

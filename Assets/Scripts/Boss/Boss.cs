@@ -23,6 +23,8 @@ public class Boss : MonoBehaviour
 			//Explote and throw some loot :D
 			Instantiate(Resources.Load(Drops[Random.Range(0, Drops.Length)]), transform.position, Quaternion.identity);
 			Destroy(gameObject);
+			GameObject Cam = GameObject.Find("Main Camera");
+			Cam.SendMessage("ChangeTheme", "Game");
 		}
 	}
 

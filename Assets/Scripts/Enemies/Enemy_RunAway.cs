@@ -16,7 +16,7 @@ public class Enemy_RunAway : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if(Vector2.Distance(transform.position, Player.transform.position) > 15) {
+		if(Vector2.Distance(transform.position, Player.transform.position) > 20) {
 			return;
 		}
 

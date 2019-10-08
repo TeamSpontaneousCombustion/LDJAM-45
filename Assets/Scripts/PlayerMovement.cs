@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 			Child.SendMessage("CreateAnchors", null, SendMessageOptions.DontRequireReceiver);
 			Child.SendMessage("ChangeArt", null, SendMessageOptions.DontRequireReceiver);
 		}
-		FireRate = 3 / (Energy + 1);
+		FireRate = (float)(3.0f / (Energy + 1));
 		GameObject Cam = GameObject.Find("Main Camera");
 		if(NumParts > 3) {
 			Cam.SendMessage("ChangeMusic", new int[] {1, 100});

@@ -57,8 +57,8 @@ public class QuestPointer : MonoBehaviour
             if(Bosses.Length > 0) {
                 Bosses = GameObject.FindGameObjectsWithTag("Boss");
                 Target = Bosses[0];
-
-
+            } else {
+                Destroy(gameObject);
             }
             return;
         }
